@@ -6,35 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do Project</title>
+    <link rel="stylesheet" href="/style/about.css">
 </head>
 
 <body>
-    <img width="80px" src="/assets/logo.png">
-    <h2>To-Do</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Notification</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Logout</a></li>
-    </ul>
+    <section class="header">
 
-    <img src="/assets/profile_pic.jpg" alt="John" style="width:100px">
-    <h1>John Doe</h1>
-    <p>Student at Jordan University,Lives in Amman</p>
-    <h2>contact information</h2>
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text"><br>
-        <label for="email">Email:</label><br>
-        <input type="email"><br>
-        <label for="Message">Write your Message:</label><br>
-        <textarea>Message</textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+        <img class="logo" src="/assets/logo.png">
+        <ul class="nav-bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </section>
+    <section class="about">
+        <div class="image">
+            <img src="/assets/profile_pic.jpg" alt="John">
+        </div>
+        <div class="desc">
+            <h1>John Doe</h1>
+            <p>Student at Jordan University,Lives in Amman</p>
+        </div>
+    </section>
+    <section>
+        <form>
+            <h2>Contact Me</h2>
+
+            <div>
+                <label for="name">Full Name:</label><br>
+                <input class="form-item" type="text" /><br>
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input class="form-item" type="email" /><br>
+            </div>
+            <div>
+                <label for="number">Phone:</label><br>
+                <input class="form-item" type="number" /><br>
+            </div>
+            <div>
+                <label for="Message">Write your Message:</label><br>
+                <textarea class="form-item"></textarea><br>
+            </div>
+            <div>
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </section>
     <footer>
-        <img width="70px" src="/assets/social_media_icon.png">
-        <h4>&copy; copyright To-Do All rights reserved</h4>
+        &copy; 2022 ASAC All rights reserved
     </footer>
 </body>
 
