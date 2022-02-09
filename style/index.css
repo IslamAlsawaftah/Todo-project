@@ -1,0 +1,53 @@
+body {
+    margin: auto;
+}
+.header {
+    display: flex;
+}
+.logo {
+    width : 80px;
+}
+.nav-bar {
+    background-color: #C4C4C4;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    padding: 0;
+}
+.nav-bar li a {
+    text-decoration: none;
+}
+.page-title {
+    text-align: center;
+    margin-top: 100px;
+}
+table {
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+}
+table tr th,td {
+    padding: 10px 10px;
+    text-align: center;
+}
+table input[type=checkbox] {
+float: right;
+}
+table tr .completed {
+    background-color: green;
+}
+table tr .not-started {
+    background-color: red;
+}
+footer {
+    width: 100%;
+    background-color: #C4C4C4;
+    text-align: center;
+    padding: 16px 0;
+    position: fixed;
+    bottom: 0;
+}
