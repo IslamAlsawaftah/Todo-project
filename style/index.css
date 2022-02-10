@@ -31,17 +31,21 @@ table {
     border-collapse: collapse;
 }
 table tr th,td {
-    padding: 10px 10px;
+    padding: 15px;
     text-align: center;
 }
 table input[type=checkbox] {
 float: right;
 }
-table tr .completed {
+table tr .completed p{
     background-color: green;
+    display: inline;
+    padding: 10px 20px;
 }
-table tr .not-started {
+table tr .not-started p{
     background-color: red;
+    display: inline;
+    padding: 10px 20px;
 }
 footer {
     width: 100%;
