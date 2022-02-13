@@ -39,13 +39,15 @@ float: right;
 }
 table tr .completed p{
     background-color: green;
-    display: inline;
+    width: 30%;
     padding: 10px 20px;
+    margin: auto;
 }
 table tr .not-started p{
     background-color: red;
-    display: inline;
     padding: 10px 20px;
+    width: 30%;
+    margin: auto;
 }
 footer {
     width: 100%;
