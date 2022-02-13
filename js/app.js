@@ -1,5 +1,10 @@
+'use strict';
 var name = prompt("Enter your name:");
 var gender = prompt("Enter your gender:").toLowerCase();
+// to avoid the problem of (Uncaught TypeError: Cannot read property 'toLowerCase' of null)
+if (gender === null || gender === "") {
+    alert('Please enter a gender.');
+}
 var age = prompt("Enter your age:");
 
 if (age <= 0) {
@@ -17,3 +22,19 @@ if (complete == true) {
         alert(`Welcome ${name}`);
     }
 }
+var arr = [];
+function askPrompt(ans) {
+    if (ans == "yes") {
+        arr.push(ans);
+    }
+    else if (ans == "no") {
+        arr.push(ans);
+    }
+    else if (ans == "") {
+        arr.push("invalid");
+    }
+}
+console.log(arr);
+askPrompt(prompt("Are you a student?"));
+askPrompt(prompt("Are you married?"));
+askPrompt(prompt("Are you live in Amman?"));
