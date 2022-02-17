@@ -22,8 +22,8 @@ if (complete == true) {
         alert(`Welcome ${name}`);
     }
 }
-var arr = [];
 function askPrompt(ans) {
+    var arr = [];
     if (ans == "yes") {
         arr.push(ans);
     }
@@ -33,8 +33,9 @@ function askPrompt(ans) {
     else if (ans == "") {
         arr.push("invalid");
     }
+    arr.forEach(ans => console.log(ans));
 }
-console.log(arr);
+
 askPrompt(prompt("Are you a student?"));
 askPrompt(prompt("Are you married?"));
 askPrompt(prompt("Are you live in Amman?"));
