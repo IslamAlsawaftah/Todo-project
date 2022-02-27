@@ -22,7 +22,6 @@ if (complete == true) {
         alert(`Welcome ${name}`);
     }
 }
-
 var arr = [];
 function askPrompt(ans) {
     if (ans == "yes") {
